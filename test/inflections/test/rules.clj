@@ -12,7 +12,7 @@
       (is (= (str (:pattern rule)) "(n)ews$"))
       (is (= (:replacement rule) "$1ews")))
     (add-rule! rules (make-example-rule))
-    (is (= (count @rules) 1))))
+    (is (= (count @rules) 2))))
 
 (deftest test-make-rule
   (let [rule (make-rule #"(n)ews$" "$1ews")]
